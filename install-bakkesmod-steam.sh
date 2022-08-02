@@ -16,7 +16,8 @@ INSTALL_DESKTOP=1
 install(){
     # Download bakkesmod
     wget https://github.com/bakkesmodorg/BakkesModInjectorCpp/releases/latest/download/BakkesModSetup.zip -O ./BakkesModSetup.zip && unzip -q ./BakkesModSetup.zip -O 
-
+    # Set prefix to windows 10
+    protontricks 252950 win10
     # Run setup
     protontricks -c "wine '$PWD/BakkesModSetup.exe'" 252950
 
@@ -142,6 +143,6 @@ if [[ $(ls Inject.exe) = Inject.exe ]]; then
     cleanup
 else
     echo "Error: Inject.exe not found"
-    [[ COMPILE -eq 1 ]] && echo "If compilation failed try installing $(tput bold)x86_64-w64-mingw32-g++(tput sgr0) or $(tput bold)mingw64-winpthreads-static $(tput sgr0)"
+    [[ COMPILE -eq 1 ]] && echo "If compilation failed try installing $(tput bold)x86_64-w64-mingw32-g++ $(tput sgr0)or $(tput bold)mingw64-winpthreads-static"
     exit 1
 fi
