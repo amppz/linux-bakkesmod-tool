@@ -143,6 +143,6 @@ if [[ $(ls Inject.exe) = Inject.exe ]]; then
     cleanup
 else
     echo "Error: Inject.exe not found"
-    [[ COMPILE -eq 1 ]] && echo "If compilation failed try installing $(tput bold)x86_64-w64-mingw32-g++ $(tput sgr0)or $(tput bold)mingw64-winpthreads-static"
+    [[ COMPILE -eq 1 ]] && echo "If compilation failed try installing $(tput bold)x86_64-w64-mingw32-g++ $(tput sgr0)and $(tput bold)mingw64-winpthreads-static"
     exit 1
 fi
