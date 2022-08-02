@@ -1,5 +1,5 @@
 #!/bin/bash
-
+export WINEDEBUG=fixme-all
 show_help(){
     echo "Usage:"
     echo "	bakkesmod-tool [OPTION?]"
