@@ -40,3 +40,4 @@ Close the BakkesMod application, and if this doesn't work run `protontricks -c '
 
 Claritux for the bakkesmod launch script https://www.reddit.com/r/bakkesmod/comments/w9e7ur/comment/ihz37h3/?utm_source=reddit&utm_medium=web2x&context=3
 
+[BakkesMod](https://github.com/bakkesmodorg) for obvious reasons
