@@ -6,6 +6,7 @@ Some scripts put together to make installing and using bakkesmod easier for Linu
 - **[Protontricks](https://github.com/Matoking/protontricks)** must be installed 
 - (Optional) x86_64-w64-mingw32-g++ 
 - (Optional) mingw64-winpthreads-static
+
 The two optional prerequisites are only optional if you want to use the precompiled Inject.exe (use `--dont-compile-injector` on the installer), it's probably a better idea to compile Inject.cpp yourself
 # Installing
 Simply run install-bakkesmod-steam.sh to install. 
@@ -29,7 +30,7 @@ Run bakkesmod-tool to start the normal BakkesMod application - you will likely g
 ```
 # Troubleshooting
 ### Rocket League doesn't open
-Close the BakkesMod application, and if this doesn't work run `protontricks
+Close the BakkesMod application, and if this doesn't work run `protontricks -c 'wineserver -k' 252950` which kills all wine processes in the Rocket League wineprefix.
 
 # Credits
 
