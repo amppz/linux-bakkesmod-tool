@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Name=BakkesMod Plugin Installer
-Exec=env WINEDEBUG=trace-all bakkesmod-tool --plugin-install %u
+Exec=bakkesmod-tool --plugin-install %u
 Icon=bakkesmod
 Terminal=true
 NoDisplay=true
