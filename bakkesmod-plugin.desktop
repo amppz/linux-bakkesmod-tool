@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=BakkesMod Plugin Installer
+Exec=env WINEDEBUG=trace-all bakkesmod-tool --plugin-install %u
+Icon=bakkesmod
+Terminal=true
+NoDisplay=true
+MimeType=x-scheme-handler/bakkesmod
+Name[en_GB]=BakkesMod Plugin Installer
+X-Desktop-File-Install-Version=0.26

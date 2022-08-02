@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=BakkesMod
+Exec=bakkesmod-tool
+Icon=bakkesmod
+Terminal=true
+NoDisplay=true
+Name[en_GB]=BakkesMod
+X-Desktop-File-Install-Version=0.26
