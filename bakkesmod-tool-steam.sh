@@ -31,14 +31,14 @@ inject(){
     done
     echo "Injecting"
     # Use custom injector to inject instead
-    WINEFSYNC=1 protontricks -c "wine 'c:/Program Files/BakkesMod/BakkesMod.exe'" 252950
+    WINEFSYNC=1 protontricks -c "wine 'c:/Program Files/BakkesMod/Inject.exe'" 252950
 }
+
 echo "Unofficial BakkesMod Tool"
 
 if [ ${#} -lt 1 ];
 then
-    export WINEFSYNC=1
-    protontricks -c "wine 'c:/Program Files/BakkesMod/BakkesMod.exe'" 252950
+    WINEFSYNC=1 protontricks -c "wine 'c:/Program Files/BakkesMod/BakkesMod.exe'" 252950
 else
     opt=${1}
     case ${opt} in
@@ -52,13 +52,11 @@ else
         -h | --help)
             show_help
             ;;
+        -s | --start)
+            WINEFSYNC=1 protontricks -c "wine 'c:/Program Files/BakkesMod/BakkesMod.exe'" 252950
+            ;;
         *)
             echo "Invalid parameter, see valid parameters on, bakkesmod-tool --help"
             ;;
     esac
 fi
-
-
-
-
-
