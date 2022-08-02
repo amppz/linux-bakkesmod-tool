@@ -7,10 +7,10 @@ show_help(){
     echo ""
     echo "With no OPTION, starts BakkesMod application"
     echo ""
-    echo "  -p, --plugin-install LINK       Installs a plugin with a link in the format bakkesmod://"
-    echo "  -i, --inject                    Injects Rocket League with BakkesMod. "
-    echo "  -h, --help                      Shows this help "
-    echo "  -s, --start                     Starts BakkesMod application, note that the game will not start if BakkesMod is already open"
+    echo "  -p, --plugin-install LINK       Installs a plugin with a link in the format bakkesmod://install/"
+    echo "  -i, --inject                    Injects Rocket League with BakkesMod"
+    echo "  -h, --help                      Shows this help message"
+    echo "  -s, --start                     Starts BakkesMod application, note that the Rocket League will not start if BakkesMod is already open"
 }
 
 # This function is stolen from https://reddit.com/r/bakkesmod/comments/w9e7ur/running_bakkesmod_on_linux_with_steam_proton/ihz37h3/?context=3
@@ -56,7 +56,7 @@ else
             WINEFSYNC=1 protontricks -c "wine 'c:/Program Files/BakkesMod/BakkesMod.exe'" 252950
             ;;
         *)
-            echo "Invalid parameter, see valid parameters on, bakkesmod-tool --help"
+            echo "Invalid parameter, see valid parameters in bakkesmod-tool --help"
             ;;
     esac
 fi
